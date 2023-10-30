@@ -10,7 +10,9 @@ def main():
     parser.add_argument("cmd", nargs="*")
     args = parser.parse_args()
 
+    subprocess.run(args.cmd)
     for changes in watch(args.path):
+        print(changes)
         subprocess.run(args.cmd)
 
 
