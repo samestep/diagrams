@@ -1,4 +1,5 @@
 /__pycache__/
 /.pdm-python
 /.venv/
+/diagrams.egg-info/
 /out/
