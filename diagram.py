@@ -1,18 +1,10 @@
 #!/usr/bin/env python3
 
 import argparse
-import colorsys
 import importlib
 from pathlib import Path
 
-import svgwrite
-
-Drawing = svgwrite.Drawing
-
-
-def hsv(h, s, v):
-    r, g, b = colorsys.hsv_to_rgb(h, s, v)
-    return f"#{int(r*255):02x}{int(g*255):02x}{int(b*255):02x}"
+import drawsvg as dw
 
 
 def main():
@@ -25,10 +17,9 @@ def main():
     mod = importlib.import_module(args.mod)
     func = getattr(mod, args.func)
     dwg = func()
-    if isinstance(dwg, svgwrite.Drawing):
+    if isinstance(dwg, dw.Drawing):
         Path(args.out).parent.mkdir(parents=True, exist_ok=True)
-        dwg.filename = args.out
-        dwg.save()
+        dwg.save_svg(args.out)
     else:
         raise TypeError(f"Expected Drawing, got {type(dwg)}")
 

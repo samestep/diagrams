@@ -5,7 +5,7 @@
 groups = ["default"]
 strategy = ["cross_platform"]
 lock_version = "4.4"
-content_hash = "sha256:c8dd73b4f5788777cf1a0fdec0970b92d234fb9f226f08ec03f10357469c0e53"
+content_hash = "sha256:b4c20100062e9f3ec5dad3bb516e80a3d8ae9f0c8f702017096617e2681f2f53"
 
 [[package]]
 name = "anyio"
@@ -20,6 +20,14 @@ dependencies = [
 files = [
     {file = "anyio-4.0.0-py3-none-any.whl", hash = "sha256:cfdb2b588b9fc25ede96d8db56ed50848b0b649dca3dd1df0b11f683bb9e0b5f"},
     {file = "anyio-4.0.0.tar.gz", hash = "sha256:f7ed51751b2c2add651e5747c891b47e26d2a21be5d32d9311dfe9692f3e5d7a"},
+]
+
+[[package]]
+name = "drawsvg"
+version = "2.3.0"
+summary = "A Python 3 library for programmatically generating SVG (vector) images and animations.  Drawsvg can also render to PNG, MP4, and display your drawings in Jupyter notebook and Jupyter lab."
+files = [
+    {file = "drawsvg-2.3.0-py3-none-any.whl", hash = "sha256:93ad2b465d0da0b98c4e2cde11b64ce0149e2f15f8cdc0bd8e68f8b30a2e0abf"},
 ]
 
 [[package]]
@@ -50,16 +58,6 @@ summary = "Sniff out which async library your code is running under"
 files = [
     {file = "sniffio-1.3.0-py3-none-any.whl", hash = "sha256:eecefdce1e5bbfb7ad2eeaabf7c1eeb404d7757c379bd1f7e5cce9d8bf425384"},
     {file = "sniffio-1.3.0.tar.gz", hash = "sha256:e60305c5e5d314f5389259b7f22aaa33d8f7dee49763119234af3755c55b9101"},
-]
-
-[[package]]
-name = "svgwrite"
-version = "1.4.3"
-requires_python = ">=3.6"
-summary = "A Python library to create SVG drawings."
-files = [
-    {file = "svgwrite-1.4.3-py3-none-any.whl", hash = "sha256:bb6b2b5450f1edbfa597d924f9ac2dd099e625562e492021d7dd614f65f8a22d"},
-    {file = "svgwrite-1.4.3.zip", hash = "sha256:a8fbdfd4443302a6619a7f76bc937fc683daf2628d9b737c891ec08b8ce524c3"},
 ]
 
 [[package]]
