@@ -1,11 +1,8 @@
 [project]
 name = "diagrams"
 version = "0.0.0"
-requires-python = ">=3.8,<3.11"
-dependencies = ["drawsvg~=2.0", "sympy"]
-
-[tool.pdm.dev-dependencies]
-dev = ["watchfiles"]
+requires-python = ">=3.10,<3.11"
+dependencies = ["drawsvg", "networkx", "numpy", "sympy", "watchfiles"]
 
 [build-system]
 requires = ["hatchling"]

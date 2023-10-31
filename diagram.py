@@ -5,10 +5,23 @@ import importlib
 from pathlib import Path
 
 import drawsvg as dw
+import numpy as np
+
+
+def flatten(l):
+    return (x for r in l for x in r)
 
 
 def rgb(r, g, b):
     return f"#{int(r * 255):02x}{int(g * 255):02x}{int(b * 255):02x}"
+
+
+def normalize(v):
+    return v / np.linalg.norm(v)
+
+
+def rot90(v):
+    return np.array([-v[1], v[0]])
 
 
 def main():
