@@ -4,7 +4,7 @@ from sympy import Quaternion
 from diagram import rgb
 
 
-def cayley_table(G, *, texify):
+def cayley_table(group, *, texify):
     d = dw.Drawing(220, 220)
 
     dark_gray = rgb(0.4, 0.4, 0.4)
@@ -14,14 +14,14 @@ def cayley_table(G, *, texify):
 
     box_padding = 2
 
-    n = len(G)
+    n = len(group)
     w = table_width / n
     h = table_height / n
 
     box_colors = {}
     label_colors = {}
 
-    for m, g in enumerate(G):
+    for m, g in enumerate(group):
         t = 0.1 + 0.8 * (1 - (m + 1) / n)
         s = max(0, min(1, t))
         red = 1 - (1 - max(0, min(1, 3 * t))) ** 2
@@ -35,8 +35,8 @@ def cayley_table(G, *, texify):
         d.append(dw.Text(texify(g), "8px", w / 2, v, center=True, fill=dark_gray))
         d.append(dw.Text(texify(g), "8px", u, h / 2, center=True, fill=dark_gray))
 
-    for x, b in enumerate(G):
-        for y, c in enumerate(G):
+    for x, b in enumerate(group):
+        for y, c in enumerate(group):
             a = b * c
 
             box = box_colors.get(a)
