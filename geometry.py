@@ -4,7 +4,7 @@ import random
 import drawsvg as dw
 import numpy as np
 
-from diagram import normalize, rgb, rot90
+from diagram import normalize, rgb, rot90, vec2
 
 Point = str
 Segment = frozenset[Point]  # must have exactly two points
@@ -98,7 +98,7 @@ def euclidean(g: Geometry, *, seed):
 
     random.seed(seed)
     rand = lambda: random.uniform(gap, canvas - gap)
-    pos = {p: np.array([rand(), rand()]) for p in g.points.keys()}
+    pos = {p: vec2(rand(), rand()) for p in g.points.keys()}
     for p, (q, r) in g.midpoints.items():
         pos[p] = (pos[q] + pos[r]) / 2
 

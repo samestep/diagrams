@@ -12,12 +12,20 @@ def rgb(r, g, b):
     return f"#{int(r * 255):02x}{int(g * 255):02x}{int(b * 255):02x}"
 
 
+def vec2(x, y):
+    return np.array([x, y])
+
+
+def vec3(x, y, z):
+    return np.array([x, y, z])
+
+
 def normalize(v):
     return v / np.linalg.norm(v)
 
 
 def rot90(v):
-    return np.array([-v[1], v[0]])
+    return vec2(-v[1], v[0])
 
 
 def main():

@@ -1,9 +1,8 @@
 import math
 
 import drawsvg as dw
-import numpy as np
 
-from diagram import normalize
+from diagram import normalize, vec2
 
 
 def penrose(
@@ -29,7 +28,7 @@ def penrose(
     b = []
     for k in range(n):
         theta = angle + (k * math.tau) / n
-        p = np.array([s * math.sin(theta), -math.cos(theta)])
+        p = vec2(s * math.sin(theta), -math.cos(theta))
         a.append(center + r * p)
         b.append(center + R * p)
 
@@ -79,7 +78,7 @@ def draw():
     for j in range(3):
         for i in range(4):
             n = max(3, 1 + j * 4 + i)
-            center = np.array([width / 2 + 400 * (i - 1.5), height / 2 - 350 * (j - 1)])
+            center = vec2(width / 2 + 400 * (i - 1.5), height / 2 - 350 * (j - 1))
 
             d.append(
                 penrose(
@@ -111,7 +110,7 @@ def draw():
                 )
             )
 
-    c = np.array([width / 2, height / 2 - 60])
+    c = vec2(width / 2, height / 2 - 60)
     R = 350
 
     logo = lambda: penrose(
@@ -126,7 +125,7 @@ def draw():
         dw.Text(
             "Penrose",
             "172px",
-            *(c + np.array([0, R + 25])),
+            *(c + vec2(0, R + 25)),
             center=True,
             font_family="HelveticaNeue-CondensedBold,Helvetica,Arial,Geneva,Tahoma,sans-serif",
             fill="#fff",
