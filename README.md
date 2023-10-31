@@ -4,7 +4,7 @@ First install [PDM][], then run these commands:
 
 ```sh
 pdm install
-pdm run watch.py quaternions
+pdm run all.py
 ```
 
 [PDM]: https://pdm.fming.dev/

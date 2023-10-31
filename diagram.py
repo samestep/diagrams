@@ -18,14 +18,12 @@ def main():
     parser.add_argument("-o", "--out", required=True)
     args = parser.parse_args()
 
-    mod = importlib.import_module(args.mod)
-    func = getattr(mod, args.func)
-    dwg = func()
-    if isinstance(dwg, dw.Drawing):
+    d = getattr(importlib.import_module(args.mod), args.func)()
+    if isinstance(d, dw.Drawing):
         Path(args.out).parent.mkdir(parents=True, exist_ok=True)
-        dwg.save_svg(args.out)
+        d.save_svg(args.out)
     else:
-        raise TypeError(f"Expected Drawing, got {type(dwg)}")
+        raise TypeError(f"Expected Drawing, got {type(d)}")
 
 
 if __name__ == "__main__":
