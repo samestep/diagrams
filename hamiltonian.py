@@ -5,7 +5,7 @@ from itertools import pairwise
 import drawsvg as dw
 import networkx as nx
 
-from diagram import flatten, normalize, rot90
+from diagram import normalize, rot90
 
 
 def hamiltonian(nodes, other, *, seed):
@@ -34,7 +34,7 @@ def hamiltonian(nodes, other, *, seed):
         y = 4
         d.append(
             dw.Lines(
-                *flatten([m - x * t + y * n, m + x * t, m - x * t - y * n]), fill=color
+                *(m - x * t + y * n), *(m + x * t), *(m - x * t - y * n), fill=color
             )
         )
 
@@ -44,14 +44,14 @@ def hamiltonian(nodes, other, *, seed):
         fill = red_orange if v == nodes[0] else "black"
         d.append(dw.Circle(x, y, 5, fill=fill))
 
-        theta = random.random() * math.pi * 2
+        theta = random.uniform(0, math.tau)
         r = 15
         d.append(
             dw.Text(
                 v,
                 "18px",
                 x + r * math.cos(theta),
-                y + r * math.sin(theta),
+                y - r * math.sin(theta),
                 center=True,
                 font_family="serif",
                 fill=fill,
