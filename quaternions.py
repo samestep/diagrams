@@ -48,7 +48,7 @@ def cayley_table(G, *, texify):
                         w - box_padding,
                         h - box_padding,
                         rx=2,
-                        fill=box_colors[a],
+                        fill=box,
                         fill_opacity=0.75,
                     )
                 )
