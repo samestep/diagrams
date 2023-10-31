@@ -1,4 +1,4 @@
-import math
+from math import cos, pi, sin, tau
 
 import drawsvg as dw
 
@@ -19,16 +19,16 @@ def penrose(
     assert isinstance(n, int) and n >= 3
     R = radius  # shorthand for outer radius
     r = hole_size * R  # inner radius
-    alpha = math.pi * (n - 2) / n  # interior angle of regular n-gon
-    w = (R - r) / (4 * math.cos(alpha / 2))  # half-width
+    alpha = pi * (n - 2) / n  # interior angle of regular n-gon
+    w = (R - r) / (4 * cos(alpha / 2))  # half-width
     s = 1 if chirality == "cw" else -1
 
     # inner and outer polygons
     a = []
     b = []
     for k in range(n):
-        theta = angle + (k * math.tau) / n
-        p = vec2(s * math.sin(theta), -math.cos(theta))
+        theta = angle + (k * tau) / n
+        p = vec2(s * sin(theta), -cos(theta))
         a.append(center + r * p)
         b.append(center + R * p)
 

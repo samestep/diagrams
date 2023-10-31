@@ -1,5 +1,5 @@
-import math
 import random
+from math import cos, sin, tau
 
 import drawsvg as dw
 import numpy as np
@@ -192,14 +192,14 @@ def euclidean(g: Geometry, *, seed):
         else:
             d.append(dw.Circle(x, y, point_radius))
 
-        theta = random.uniform(0, math.tau)
+        theta = random.uniform(0, tau)
         r = text_padding
         d.append(
             dw.Text(
                 p,
                 font_size,
-                x + r * math.cos(theta),
-                y - r * math.sin(theta),
+                x + r * cos(theta),
+                y - r * sin(theta),
                 center=True,
                 font_family="serif",
                 font_style="italic",

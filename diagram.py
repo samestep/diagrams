@@ -8,23 +8,23 @@ import drawsvg as dw
 import numpy as np
 
 
-def rgb(r, g, b):
+def rgb(r, g, b) -> str:
     return f"#{int(r * 255):02x}{int(g * 255):02x}{int(b * 255):02x}"
 
 
-def vec2(x, y):
+def vec2(x, y) -> np.ndarray:
     return np.array([x, y])
 
 
-def vec3(x, y, z):
+def vec3(x, y, z) -> np.ndarray:
     return np.array([x, y, z])
 
 
-def normalize(v):
+def normalize(v: np.ndarray) -> np.ndarray:
     return v / np.linalg.norm(v)
 
 
-def rot90(v):
+def rot90(v: np.ndarray) -> np.ndarray:
     return vec2(-v[1], v[0])
 
 

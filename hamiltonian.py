@@ -1,6 +1,6 @@
-import math
 import random
 from itertools import pairwise
+from math import cos, sin, tau
 
 import drawsvg as dw
 import networkx as nx
@@ -44,14 +44,14 @@ def hamiltonian(nodes, other, *, seed):
         fill = red_orange if v == nodes[0] else "black"
         d.append(dw.Circle(x, y, 5, fill=fill))
 
-        theta = random.uniform(0, math.tau)
+        theta = random.uniform(0, tau)
         r = 15
         d.append(
             dw.Text(
                 v,
                 "18px",
-                x + r * math.cos(theta),
-                y - r * math.sin(theta),
+                x + r * cos(theta),
+                y - r * sin(theta),
                 center=True,
                 font_family="serif",
                 fill=fill,
