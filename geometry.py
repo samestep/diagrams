@@ -113,6 +113,26 @@ def euclidean(g: Geometry, *, seed):
             )
         )
 
+    def ray(p, t):
+        n = rot90(t)
+        d.append(
+            dw.Line(
+                *p,
+                *(p + t * (ray_length - 5)),
+                stroke_width=stroke_width,
+                stroke=darkpurple,
+            )
+        )
+        d.append(
+            dw.Lines(
+                *(p + t * ray_length),
+                *(p + t * (ray_length - 10) - n * 4),
+                *(p + t * (ray_length - 7)),
+                *(p + t * (ray_length - 10) + n * 4),
+                fill=darkpurple,
+            )
+        )
+
     for theta in g.angles:
         q, (p, r) = theta
         c = pos[q]
@@ -135,14 +155,7 @@ def euclidean(g: Geometry, *, seed):
         d.append(path)
 
         if theta in g.bisectors:
-            d.append(
-                dw.Line(
-                    *c,
-                    *(c + normalize(a + b) * ray_length),
-                    stroke_width=stroke_width,
-                    stroke=darkpurple,
-                )
-            )
+            ray(c, normalize(a + b))
 
     for p, q in g.perpendicular_bisectors:
         s = pos[p]
@@ -168,11 +181,7 @@ def euclidean(g: Geometry, *, seed):
             )
         )
 
-        d.append(
-            dw.Line(
-                *m, *(m + n * ray_length), stroke=darkpurple, stroke_width=stroke_width
-            )
-        )
+        ray(m, n)
 
     for p, q in g.segments:
         d.append(dw.Line(*pos[p], *pos[q], stroke="black", stroke_width=stroke_width))
