@@ -1,11 +1,28 @@
+from typing import Any, Callable
+
 import drawsvg as dw
 from sympy import Quaternion
 
 from diagram import rgb
 
 
-def cayley_table(group, *, texify):
+def cayley_table(group, *, texify: Callable[[Any], str]):
     d = dw.Drawing(220, 220)
+
+    def equation(g, x, y, **kwargs):
+        s = texify(g)
+        d.append(
+            dw.Text(
+                s,
+                "8px",
+                x,
+                y,
+                center=True,
+                font_family="serif",
+                font_style=None if s and s[-1].isdigit() else "italic",
+                **kwargs,
+            )
+        )
 
     dark_gray = rgb(0.4, 0.4, 0.4)
 
@@ -32,8 +49,8 @@ def cayley_table(group, *, texify):
 
         u = (m + 1.5) * w
         v = (m + 1.5) * h
-        d.append(dw.Text(texify(g), "8px", w / 2, v, center=True, fill=dark_gray))
-        d.append(dw.Text(texify(g), "8px", u, h / 2, center=True, fill=dark_gray))
+        equation(g, w / 2, v, fill=dark_gray)
+        equation(g, u, h / 2, fill=dark_gray)
 
     for x, b in enumerate(group):
         for y, c in enumerate(group):
@@ -55,25 +72,18 @@ def cayley_table(group, *, texify):
 
             label = label_colors.get(a)
             if label is not None:
-                d.append(
-                    dw.Text(
-                        texify(a),
-                        "8px",
-                        (x + 1.5) * w,
-                        (y + 1.5) * h,
-                        center=True,
-                        fill=label,
-                    )
-                )
+                equation(a, (x + 1.5) * w, (y + 1.5) * h, fill=label)
 
     return d
 
 
 def single(x, v):
     if v:
-        return v if x == 1 else f"-{v}" if x == -1 else f"{x}{v}"
-    else:
-        return str(x)
+        if x == 1:
+            return v
+        elif x == -1:
+            return f"−{v}"
+    return f"−{-x}{v}" if x < 0 else f"{x}{v}"
 
 
 def short(g):
