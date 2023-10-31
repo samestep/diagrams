@@ -2,7 +2,7 @@ import random
 from math import cos, sin, tau
 
 import drawsvg as dw
-import numpy as np
+from numpy import cross
 
 from diagram import normalize, rgb, rot90, vec2
 
@@ -148,7 +148,7 @@ def euclidean(g: Geometry, *, seed):
             ry=theta_radius,
             rot=0,
             large_arc=False,
-            sweep=np.cross(a, b) > 0,
+            sweep=cross(a, b) > 0,
             ex=ex,
             ey=ey,
         )

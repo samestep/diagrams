@@ -6,6 +6,7 @@ from pathlib import Path
 
 import drawsvg as dw
 import numpy as np
+from numpy.linalg import norm
 
 
 def rgb(r, g, b) -> str:
@@ -21,7 +22,7 @@ def vec3(x, y, z) -> np.ndarray:
 
 
 def normalize(v: np.ndarray) -> np.ndarray:
-    return v / np.linalg.norm(v)
+    return v / norm(v)
 
 
 def rot90(v: np.ndarray) -> np.ndarray:
