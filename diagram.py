@@ -7,6 +7,10 @@ from pathlib import Path
 import drawsvg as dw
 
 
+def rgb(r, g, b):
+    return f"#{int(r * 255):02x}{int(g * 255):02x}{int(b * 255):02x}"
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("-m", "--mod", required=True)
