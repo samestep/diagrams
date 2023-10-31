@@ -87,11 +87,12 @@ def euclidean(g: Geometry, *, seed):
     )
     d.append(
         dw.Text(
-            "E²",
+            "𝐄²",
             font_size,
             (canvas - gap) - text_padding_2,
             gap + text_padding_2,
             center=True,
+            font_family="serif",
         )
     )
 
@@ -191,6 +192,8 @@ def euclidean(g: Geometry, *, seed):
                 x + r * math.cos(theta),
                 y - r * math.sin(theta),
                 center=True,
+                font_family="serif",
+                font_style="italic",
             )
         )
 
