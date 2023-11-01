@@ -209,6 +209,9 @@ def reaction(*, title: str, reactants: list[Molecule], products: list[Molecule],
                 *(center + vec2(0, bond_length * 0.75)),
                 center=True,
                 font_family=font_family,
+                stroke="white",
+                stroke_width=4,
+                paint_order="stroke",
             )
         )
 
