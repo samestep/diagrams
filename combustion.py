@@ -210,7 +210,7 @@ def reaction(*, title: str, reactants: list[Molecule], products: list[Molecule],
                 center=True,
                 font_family=font_family,
                 stroke="white",
-                stroke_width=4,
+                stroke_width=5,
                 paint_order="stroke",
             )
         )
