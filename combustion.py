@@ -301,14 +301,25 @@ def reaction(*, title: str, reactants: list[Molecule], products: list[Molecule],
     Pc = product_center
     s = reaction_box_size
     p = 10
+
+    start = vec2(Rc + (0.5 * s) + p, height / 2)
+    end = vec2(Pc - (0.5 * s) - p, height / 2)
     d.append(
         dw.Line(
-            Rc + (0.5 * s) + p,
-            height / 2,
-            Pc - (0.5 * s) - p,
-            height / 2,
+            *start,
+            *(end + vec2(-10, 0)),
             stroke="black",
             stroke_width=5,
+        )
+    )
+    d.append(
+        dw.Lines(
+            *end,
+            *(end + vec2(-20, -10)),
+            *(end + vec2(-15, 0)),
+            *(end + vec2(-20, 10)),
+            close=True,
+            stroke="black",
         )
     )
 
