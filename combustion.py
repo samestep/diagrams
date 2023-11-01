@@ -66,58 +66,10 @@ def reaction(*, title: str, reactants: list[Molecule], products: list[Molecule],
         dw.Rectangle(0, 0, width, height, fill="none", stroke=gray, stroke_width=8)
     )
 
-    reaction_box_size = 0.75 * width / 2
-    reaction_box_top = height / 2 - reaction_box_size / 2
-    reaction_box_bottom = height / 2 + reaction_box_size / 2
-
-    reactant_center = width / 4
-    d.append(
-        dw.Rectangle(
-            reactant_center - reaction_box_size / 2,
-            reaction_box_top,
-            reaction_box_size,
-            reaction_box_size,
-            fill_opacity=0.1,
-            rx=20,
-        )
-    )
-    d.append(
-        dw.Text(
-            "reactants",
-            "30px",
-            reactant_center,
-            reaction_box_bottom + 24,
-            center=True,
-            font_family=font_family,
-            font_weight="bold",
-        )
-    )
-
-    product_center = width * 3 / 4
-    d.append(
-        dw.Rectangle(
-            product_center - reaction_box_size / 2,
-            reaction_box_top,
-            reaction_box_size,
-            reaction_box_size,
-            fill_opacity=0.1,
-            rx=20,
-        )
-    )
-    d.append(
-        dw.Text(
-            "products",
-            "30px",
-            product_center,
-            reaction_box_bottom + 24,
-            center=True,
-            font_family=font_family,
-            font_weight="bold",
-        )
-    )
-
     random.seed(seed)
 
+    shadows = dw.Group()
+    molecules = dw.Group()
     labels = dw.Group()
 
     def molecule(mol: Molecule, center):
@@ -143,7 +95,17 @@ def reaction(*, title: str, reactants: list[Molecule], products: list[Molecule],
             a, _ = mol.atoms[i]
             p = locs[i]
 
-            d.append(
+            shadows.append(
+                dw.Ellipse(
+                    *(center + vec2(p[0], p[2] / 2 + 1.5) * bond_length),
+                    2 * atom_radii[a],
+                    atom_radii[a],
+                    fill=rgb(0.95, 0.95, 0.95),
+                    stroke="none",
+                )
+            )
+
+            molecules.append(
                 dw.Circle(
                     *(center + vec2(p[0], p[1]) * bond_length),
                     atom_radii[a],
@@ -166,7 +128,7 @@ def reaction(*, title: str, reactants: list[Molecule], products: list[Molecule],
                 s = p * bond_length + t * atom_radii[a]
                 e = q * bond_length - t * atom_radii[b]
 
-                d.append(
+                molecules.append(
                     dw.Line(
                         *(center + vec2(s[0], s[1])),
                         *(center + vec2(e[0], e[1])),
@@ -175,7 +137,7 @@ def reaction(*, title: str, reactants: list[Molecule], products: list[Molecule],
                         stroke_linecap="round",
                     )
                 )
-                d.append(
+                molecules.append(
                     dw.Line(
                         *(center + vec2(s[0], s[1])),
                         *(center + vec2(e[0], e[1])),
@@ -200,7 +162,7 @@ def reaction(*, title: str, reactants: list[Molecule], products: list[Molecule],
 
                 u = rot90(normalize(vec2(v[0], v[1]))) * atom_radius / 4
 
-                d.append(
+                molecules.append(
                     dw.Line(
                         *(center + vec2(s[0], s[1]) - u),
                         *(center + vec2(e[0], e[1]) - u),
@@ -209,7 +171,7 @@ def reaction(*, title: str, reactants: list[Molecule], products: list[Molecule],
                         stroke_linecap="round",
                     )
                 )
-                d.append(
+                molecules.append(
                     dw.Line(
                         *(center + vec2(s[0], s[1]) - u),
                         *(center + vec2(e[0], e[1]) - u),
@@ -219,7 +181,7 @@ def reaction(*, title: str, reactants: list[Molecule], products: list[Molecule],
                     )
                 )
 
-                d.append(
+                molecules.append(
                     dw.Line(
                         *(center + vec2(s[0], s[1]) + u),
                         *(center + vec2(e[0], e[1]) + u),
@@ -228,7 +190,7 @@ def reaction(*, title: str, reactants: list[Molecule], products: list[Molecule],
                         stroke_linecap="round",
                     )
                 )
-                d.append(
+                molecules.append(
                     dw.Line(
                         *(center + vec2(s[0], s[1]) + u),
                         *(center + vec2(e[0], e[1]) + u),
@@ -244,29 +206,80 @@ def reaction(*, title: str, reactants: list[Molecule], products: list[Molecule],
             dw.Text(
                 f"{mol.name} ({mol.formula})",
                 "22.5px",
-                x,
-                y + atom_radius,
+                *(center + vec2(0, bond_length * 0.75)),
                 center=True,
                 font_family=font_family,
             )
         )
 
-    for mol in reactants:
-        x = random.uniform(
+    reaction_box_size = 0.75 * width / 2
+    reaction_box_top = height / 2 - reaction_box_size / 2
+    reaction_box_bottom = height / 2 + reaction_box_size / 2
+
+    reactant_center = width / 4
+    product_center = width * 3 / 4
+
+    radius = reaction_box_size / 5
+
+    reactant_angle = random.uniform(0, tau)
+    for i, mol in enumerate(reactants):
+        c = vec2(reactant_center, height / 2 - bond_length / 2)
+        theta = reactant_angle + i * tau / len(reactants)
+        molecule(mol, c + radius * vec2(cos(theta) * 1.5, sin(theta)))
+
+    product_angle = random.uniform(0, tau)
+    for i, mol in enumerate(products):
+        c = vec2(product_center, height / 2 - bond_length / 2)
+        theta = product_angle + i * tau / len(reactants)
+        molecule(mol, c + radius * vec2(cos(theta) * 1.5, sin(theta)))
+
+    d.append(shadows)
+
+    d.append(
+        dw.Rectangle(
             reactant_center - reaction_box_size / 2,
-            reactant_center + reaction_box_size / 2,
+            reaction_box_top,
+            reaction_box_size,
+            reaction_box_size,
+            fill_opacity=0.1,
+            rx=20,
         )
-        y = random.uniform(reaction_box_top, reaction_box_bottom)
-        molecule(mol, vec2(x, y))
+    )
+    d.append(
+        dw.Text(
+            "reactants",
+            "30px",
+            reactant_center,
+            reaction_box_bottom + 24,
+            center=True,
+            font_family=font_family,
+            font_weight="bold",
+        )
+    )
 
-    for mol in products:
-        x = random.uniform(
+    d.append(
+        dw.Rectangle(
             product_center - reaction_box_size / 2,
-            product_center + reaction_box_size / 2,
+            reaction_box_top,
+            reaction_box_size,
+            reaction_box_size,
+            fill_opacity=0.1,
+            rx=20,
         )
-        y = random.uniform(reaction_box_top, reaction_box_bottom)
-        molecule(mol, vec2(x, y))
+    )
+    d.append(
+        dw.Text(
+            "products",
+            "30px",
+            product_center,
+            reaction_box_bottom + 24,
+            center=True,
+            font_family=font_family,
+            font_weight="bold",
+        )
+    )
 
+    d.append(molecules)
     d.append(labels)
 
     d.append(
@@ -303,7 +316,7 @@ def o2():
     return Molecule(
         name="oxygen",
         formula="O₂",
-        atoms=[("O", vec3(0, 0, 0)), ("O", vec3(1, 0, 0))],
+        atoms=[("O", vec3(-0.5, 0, 0)), ("O", vec3(0.5, 0, 0))],
         single=[],
         double=[(0, 1)],
     )
@@ -356,5 +369,5 @@ def draw():
         title="Methane Combustion Reaction",
         reactants=[ch4(), o2(), o2()],
         products=[co2(), h2o(), h2o()],
-        seed=1,
+        seed=0,
     )
