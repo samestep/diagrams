@@ -1,19 +1,44 @@
 import random
 from dataclasses import dataclass
-from math import cos, radians, sin, sqrt
+from math import cos, radians, sin, sqrt, tau
 
 import drawsvg as dw
-import numpy as np
+from numpy import cross, dot
 from numpy.linalg import norm
 
-from diagram import normalize, rgb, vec2, vec3
+from diagram import Vec3, normalize, rgb, rot90, vec2, vec3
+
+
+# https://en.wikipedia.org/wiki/Axis%E2%80%93angle_representation
+@dataclass(kw_only=True)
+class Rotation:
+    e: Vec3
+    theta: float
+
+    def rotate(self, v: Vec3) -> Vec3:
+        return (
+            cos(self.theta) * v
+            + sin(self.theta) * cross(self.e, v)
+            + (1 - cos(self.theta)) * dot(self.e, v) * self.e
+        )
+
+
+def random_rotation() -> Rotation:
+    def random_in_cube():
+        return vec3(random.uniform(-1, 1), random.uniform(-1, 1), random.uniform(-1, 1))
+
+    v = random_in_cube()
+    while norm(v) > 1:
+        v = random_in_cube()
+
+    return Rotation(e=normalize(v), theta=random.uniform(0, tau))
 
 
 @dataclass(kw_only=True)
 class Molecule:
     name: str
     formula: str
-    atoms: list[tuple[str, np.ndarray]]
+    atoms: list[tuple[str, Vec3]]
     single: list[tuple[int, int]]
     double: list[tuple[int, int]]
 
@@ -96,6 +121,125 @@ def reaction(*, title: str, reactants: list[Molecule], products: list[Molecule],
     labels = dw.Group()
 
     def molecule(mol: Molecule, center):
+        count = len(mol.atoms)
+
+        rotation = random_rotation()
+        locs = [rotation.rotate(v) for _, v in mol.atoms]
+        order = sorted(range(count), key=lambda i: locs[i][2])
+        single = [[] for _ in range(count)]
+        double = [[] for _ in range(count)]
+
+        for i, j in mol.single:
+            single[i].append(j)
+            single[j].append(i)
+
+        for i, j in mol.double:
+            double[i].append(j)
+            double[j].append(i)
+
+        done = [False for _ in range(count)]
+
+        for i in order:
+            a, _ = mol.atoms[i]
+            p = locs[i]
+
+            d.append(
+                dw.Circle(
+                    *(center + vec2(p[0], p[1]) * bond_length),
+                    atom_radii[a],
+                    fill="white",
+                    stroke=atom_colors[a],
+                    stroke_width=3,
+                )
+            )
+
+            for j in single[i]:
+                if done[j]:
+                    continue
+
+                b, _ = mol.atoms[j]
+                q = locs[j]
+
+                v = q - p
+                t = normalize(v)
+
+                s = p * bond_length + t * atom_radii[a]
+                e = q * bond_length - t * atom_radii[b]
+
+                d.append(
+                    dw.Line(
+                        *(center + vec2(s[0], s[1])),
+                        *(center + vec2(e[0], e[1])),
+                        stroke=turquoise,
+                        stroke_width=10,
+                        stroke_linecap="round",
+                    )
+                )
+                d.append(
+                    dw.Line(
+                        *(center + vec2(s[0], s[1])),
+                        *(center + vec2(e[0], e[1])),
+                        stroke="white",
+                        stroke_width=4,
+                        stroke_linecap="round",
+                    )
+                )
+
+            for j in double[i]:
+                if done[j]:
+                    continue
+
+                b, _ = mol.atoms[j]
+                q = locs[j]
+
+                v = q - p
+                t = normalize(v)
+
+                s = p * bond_length + t * atom_radii[a]
+                e = q * bond_length - t * atom_radii[b]
+
+                u = rot90(normalize(vec2(v[0], v[1]))) * atom_radius / 4
+
+                d.append(
+                    dw.Line(
+                        *(center + vec2(s[0], s[1]) - u),
+                        *(center + vec2(e[0], e[1]) - u),
+                        stroke=turquoise,
+                        stroke_width=10,
+                        stroke_linecap="round",
+                    )
+                )
+                d.append(
+                    dw.Line(
+                        *(center + vec2(s[0], s[1]) - u),
+                        *(center + vec2(e[0], e[1]) - u),
+                        stroke="white",
+                        stroke_width=4,
+                        stroke_linecap="round",
+                    )
+                )
+
+                d.append(
+                    dw.Line(
+                        *(center + vec2(s[0], s[1]) + u),
+                        *(center + vec2(e[0], e[1]) + u),
+                        stroke=turquoise,
+                        stroke_width=10,
+                        stroke_linecap="round",
+                    )
+                )
+                d.append(
+                    dw.Line(
+                        *(center + vec2(s[0], s[1]) + u),
+                        *(center + vec2(e[0], e[1]) + u),
+                        stroke="white",
+                        stroke_width=4,
+                        stroke_linecap="round",
+                    )
+                )
+
+            done[i] = True
+
         labels.append(
             dw.Text(
                 f"{mol.name} ({mol.formula})",
@@ -106,41 +250,6 @@ def reaction(*, title: str, reactants: list[Molecule], products: list[Molecule],
                 font_family=font_family,
             )
         )
-        for a, loc in mol.atoms:
-            d.append(
-                dw.Circle(
-                    *(center + vec2(loc[0], loc[1]) * bond_length),
-                    atom_radii[a],
-                    fill="white",
-                    stroke=atom_colors[a],
-                    stroke_width=3,
-                )
-            )
-        for i, j in mol.single + mol.double:
-            a, p = mol.atoms[i]
-            b, q = mol.atoms[j]
-            v = q - p
-            t = normalize(v)
-            s = p * bond_length + t * atom_radii[a]
-            e = q * bond_length - t * atom_radii[b]
-            d.append(
-                dw.Line(
-                    *(center + vec2(s[0], s[1])),
-                    *(center + vec2(e[0], e[1])),
-                    stroke=turquoise,
-                    stroke_width=10,
-                    stroke_linecap="round",
-                )
-            )
-            d.append(
-                dw.Line(
-                    *(center + vec2(s[0], s[1])),
-                    *(center + vec2(e[0], e[1])),
-                    stroke="white",
-                    stroke_width=4,
-                    stroke_linecap="round",
-                )
-            )
 
     for mol in reactants:
         x = random.uniform(
@@ -247,5 +356,5 @@ def draw():
         title="Methane Combustion Reaction",
         reactants=[ch4(), o2(), o2()],
         products=[co2(), h2o(), h2o()],
-        seed=0,
+        seed=1,
     )

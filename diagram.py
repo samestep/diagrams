@@ -5,7 +5,7 @@ import importlib
 from pathlib import Path
 
 import drawsvg as dw
-import numpy as np
+from numpy import array, ndarray
 from numpy.linalg import norm
 
 
@@ -13,20 +13,26 @@ def rgb(r, g, b) -> str:
     return f"#{int(r * 255):02x}{int(g * 255):02x}{int(b * 255):02x}"
 
 
-def vec2(x, y) -> np.ndarray:
-    return np.array([x, y])
+Vec = ndarray
+Vec2 = Vec
+Vec3 = Vec
 
 
-def vec3(x, y, z) -> np.ndarray:
-    return np.array([x, y, z])
+def vec2(x, y) -> Vec2:
+    return array([x, y])
 
 
-def normalize(v: np.ndarray) -> np.ndarray:
+def vec3(x, y, z) -> Vec3:
+    return array([x, y, z])
+
+
+def normalize(v: Vec) -> Vec:
     return v / norm(v)
 
 
-def rot90(v: np.ndarray) -> np.ndarray:
-    return vec2(-v[1], v[0])
+def rot90(v: Vec2) -> Vec2:
+    x, y = v
+    return vec2(-y, x)
 
 
 def main():
