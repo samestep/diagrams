@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1248" height="702" viewBox="0 0 1248 702">
+<defs>
+</defs>
+<rect x="0" y="0" width="1248" height="702" fill="none" stroke="#7f7f7f" stroke-width="8" />
+<g>
+<ellipse cx="364.816187551531" cy="322.9877840175697" rx="37.5" ry="18.75" fill="#f2f2f2" stroke="none" />
+<ellipse cx="417.7746668000383" cy="339.27624458331366" rx="37.5" ry="18.75" fill="#f2f2f2" stroke="none" />
+<ellipse cx="390.49415967977757" cy="353.3946539751987" rx="50" ry="25" fill="#f2f2f2" stroke="none" />
+<ellipse cx="449.39408544142407" cy="372.64267440532615" rx="37.5" ry="18.75" fill="#f2f2f2" stroke="none" />
+<ellipse cx="329.99169892611684" cy="378.67191289458515" rx="37.5" ry="18.75" fill="#f2f2f2" stroke="none" />
+<ellipse cx="407.5271900532872" cy="511.6436866450965" rx="50" ry="25" fill="#f2f2f2" stroke="none" />
+<ellipse cx="339.6032536478143" cy="518.5989078215708" rx="50" ry="25" fill="#f2f2f2" stroke="none" />
+<ellipse cx="165.91322788757003" cy="405.3348232769305" rx="50" ry="25" fill="#f2f2f2" stroke="none" />
+<ellipse cx="177.96800905177344" cy="443.63327430600464" rx="50" ry="25" fill="#f2f2f2" stroke="none" />
+<ellipse cx="1020.6784212699729" cy="335.32835997241887" rx="50" ry="25" fill="#f2f2f2" stroke="none" />
+<ellipse cx="941.1190973031594" cy="337.4622361638519" rx="50" ry="25" fill="#f2f2f2" stroke="none" />
+<ellipse cx="861.5597733363459" cy="339.59611235528496" rx="50" ry="25" fill="#f2f2f2" stroke="none" />
+<ellipse cx="1054.9495708913607" cy="480.72439412406095" rx="50" ry="25" fill="#f2f2f2" stroke="none" />
+<ellipse cx="1010.3010373414716" cy="488.7806501675948" rx="37.5" ry="18.75" fill="#f2f2f2" stroke="none" />
+<ellipse cx="1118.462407766331" cy="504.78441686903454" rx="37.5" ry="18.75" fill="#f2f2f2" stroke="none" />
+<ellipse cx="890.8305532682215" cy="470.0862972647043" rx="37.5" ry="18.75" fill="#f2f2f2" stroke="none" />
+<ellipse cx="811.93133180548" cy="474.81336971208725" rx="50" ry="25" fill="#f2f2f2" stroke="none" />
+<ellipse cx="804.4993690029576" cy="494.91703805297027" rx="37.5" ry="18.75" fill="#f2f2f2" stroke="none" />
+</g>
+<rect x="78.0" y="117.0" width="468.0" height="468.0" fill-opacity="0.1" rx="20" />
+<text x="312.0" y="609.0" font-size="30px" font-family="Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua, Georgia, serif" font-weight="bold" text-anchor="middle" dominant-baseline="central">reactants</text>
+<rect x="702.0" y="117.0" width="468.0" height="468.0" fill-opacity="0.1" rx="20" />
+<text x="936.0" y="609.0" font-size="30px" font-family="Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua, Georgia, serif" font-weight="bold" text-anchor="middle" dominant-baseline="central">products</text>
+<g>
+<circle cx="364.816187551531" cy="278.58680799445693" r="18.75" fill="white" stroke="#7f7f7f" stroke-width="3" />
+<path d="M370.8344622690888,267.99489689619327 L382.4697933897005,247.51720210621687" stroke="#19b299" stroke-width="10" stroke-linecap="round" />
+<path d="M370.8344622690888,267.99489689619327 L382.4697933897005,247.51720210621687" stroke="white" stroke-width="4" stroke-linecap="round" />
+<circle cx="417.7746668000383" cy="163.6920285136428" r="18.75" fill="white" stroke="#7f7f7f" stroke-width="3" />
+<path d="M411.3807979437272,180.02858135619496 L399.01931815485904,211.61258351846246" stroke="#19b299" stroke-width="10" stroke-linecap="round" />
+<path d="M411.3807979437272,180.02858135619496 L399.01931815485904,211.61258351846246" stroke="white" stroke-width="4" stroke-linecap="round" />
+<circle cx="390.49415967977757" cy="233.39465397519868" r="25" fill="white" stroke="black" stroke-width="3" />
+<path d="M371.5871406942586,229.15923587442376 L344.1719631652561,223.01787962830014" stroke="#19b299" stroke-width="10" stroke-linecap="round" />
+<path d="M371.5871406942586,229.15923587442376 L344.1719631652561,223.01787962830014" stroke="white" stroke-width="4" stroke-linecap="round" />
+<path d="M408.9003864802921,245.2895944016916 L435.5894153410382,262.5372580201063" stroke="#19b299" stroke-width="10" stroke-linecap="round" />
+<path d="M408.9003864802921,245.2895944016916 L435.5894153410382,262.5372580201063" stroke="white" stroke-width="4" stroke-linecap="round" />
+<circle cx="449.39408544142407" cy="271.45846333997605" r="18.75" fill="white" stroke="#7f7f7f" stroke-width="3" />
+<circle cx="329.99169892611684" cy="219.84131605271898" r="18.75" fill="white" stroke="#7f7f7f" stroke-width="3" />
+<circle cx="407.5271900532872" cy="415.0764873898479" r="25" fill="white" stroke="red" stroke-width="3" />
+<path d="M383.1347295003922,407.99313760972126 L357.6632533483399,393.02674499233564" stroke="#19b299" stroke-width="10" stroke-linecap="round" />
+<path d="M383.1347295003922,407.99313760972126 L357.6632533483399,393.02674499233564" stroke="white" stroke-width="4" stroke-linecap="round" />
+<path d="M389.46719035276163,397.2158494743317 L363.9957142007093,382.2494568569461" stroke="#19b299" stroke-width="10" stroke-linecap="round" />
+<path d="M389.46719035276163,397.2158494743317 L363.9957142007093,382.2494568569461" stroke="white" stroke-width="4" stroke-linecap="round" />
+<circle cx="339.6032536478143" cy="375.16610707681946" r="25" fill="white" stroke="red" stroke-width="3" />
+<circle cx="165.91322788757003" cy="314.3277885048284" r="25" fill="white" stroke="red" stroke-width="3" />
+<path d="M164.35017372734177,304.911748858598 L168.87071666391802,297.52894407357735" stroke="#19b299" stroke-width="10" stroke-linecap="round" />
+<path d="M164.35017372734177,304.911748858598 L168.87071666391802,297.52894407357735" stroke="white" stroke-width="4" stroke-linecap="round" />
+<path d="M175.01052027542545,311.43915350935777 L179.5310632120017,304.0563487243371" stroke="#19b299" stroke-width="10" stroke-linecap="round" />
+<path d="M175.01052027542545,311.43915350935777 L179.5310632120017,304.0563487243371" stroke="white" stroke-width="4" stroke-linecap="round" />
+<circle cx="177.96800905177344" cy="294.6403090781067" r="25" fill="white" stroke="red" stroke-width="3" />
+<circle cx="1020.6784212699729" cy="210.24418521209535" r="25" fill="white" stroke="red" stroke-width="3" />
+<path d="M996.3808468915867,218.7242616663732 L966.5461004040316,221.43103077328192" stroke="#19b299" stroke-width="10" stroke-linecap="round" />
+<path d="M996.3808468915867,218.7242616663732 L966.5461004040316,221.43103077328192" stroke="white" stroke-width="4" stroke-linecap="round" />
+<path d="M995.2514181691007,206.2753906026653 L965.4166716815456,208.98215970957403" stroke="#19b299" stroke-width="10" stroke-linecap="round" />
+<path d="M995.2514181691007,206.2753906026653 L965.4166716815456,208.98215970957403" stroke="white" stroke-width="4" stroke-linecap="round" />
+<circle cx="941.1190973031594" cy="217.4622361638519" r="25" fill="white" stroke="black" stroke-width="3" />
+<path d="M916.8215229247731,225.9423126181298 L886.986776437218,228.6490817250385" stroke="#19b299" stroke-width="10" stroke-linecap="round" />
+<path d="M916.8215229247731,225.9423126181298 L886.986776437218,228.6490817250385" stroke="white" stroke-width="4" stroke-linecap="round" />
+<path d="M915.6920942022872,213.4934415544219 L885.8573477147321,216.20021066133063" stroke="#19b299" stroke-width="10" stroke-linecap="round" />
+<path d="M915.6920942022872,213.4934415544219 L885.8573477147321,216.20021066133063" stroke="white" stroke-width="4" stroke-linecap="round" />
+<circle cx="861.5597733363459" cy="224.68028711560848" r="25" fill="white" stroke="red" stroke-width="3" />
+<circle cx="1054.9495708913607" cy="360.72439412406095" r="25" fill="white" stroke="red" stroke-width="3" />
+<path d="M1040.9969041570205,380.8482668751204 L1020.7655373922269,410.02788236415654" stroke="#19b299" stroke-width="10" stroke-linecap="round" />
+<path d="M1040.9969041570205,380.8482668751204 L1020.7655373922269,410.02788236415654" stroke="white" stroke-width="4" stroke-linecap="round" />
+<path d="M1074.797332414789,362.9468991801846 L1103.5765866237598,366.16953151156383" stroke="#19b299" stroke-width="10" stroke-linecap="round" />
+<path d="M1074.797332414789,362.9468991801846 L1103.5765866237598,366.16953151156383" stroke="white" stroke-width="4" stroke-linecap="round" />
+<circle cx="1010.3010373414716" cy="425.12078692745115" r="18.75" fill="white" stroke="#7f7f7f" stroke-width="3" />
+<circle cx="1118.462407766331" cy="367.8364103036566" r="18.75" fill="white" stroke="#7f7f7f" stroke-width="3" />
+<circle cx="890.8305532682215" cy="345.5650186762515" r="18.75" fill="white" stroke="#7f7f7f" stroke-width="3" />
+<path d="M872.3385482378915,347.73260095027547 L836.5873385125867,351.9232600133886" stroke="#19b299" stroke-width="10" stroke-linecap="round" />
+<path d="M872.3385482378915,347.73260095027547 L836.5873385125867,351.9232600133886" stroke="white" stroke-width="4" stroke-linecap="round" />
+<circle cx="811.93133180548" cy="354.81336971208725" r="25" fill="white" stroke="red" stroke-width="3" />
+<path d="M809.6088434296918,376.3013205641896 L806.2412352847988,407.458849299738" stroke="#19b299" stroke-width="10" stroke-linecap="round" />
+<path d="M809.6088434296918,376.3013205641896 L806.2412352847988,407.458849299738" stroke="white" stroke-width="4" stroke-linecap="round" />
+<circle cx="804.4993690029576" cy="423.5748124388148" r="18.75" fill="white" stroke="#7f7f7f" stroke-width="3" />
+</g>
+<g>
+<text x="390.49415967977757" y="293.3946539751987" font-size="22.5px" font-family="Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua, Georgia, serif" stroke="white" stroke-width="5" paint-order="stroke" text-anchor="middle" dominant-baseline="central">methane (CH₄)</text>
+<text x="373.56522185055076" y="455.1212972333337" font-size="22.5px" font-family="Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua, Georgia, serif" stroke="white" stroke-width="5" paint-order="stroke" text-anchor="middle" dominant-baseline="central">oxygen (O₂)</text>
+<text x="171.94061846967173" y="364.48404879146756" font-size="22.5px" font-family="Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua, Georgia, serif" stroke="white" stroke-width="5" paint-order="stroke" text-anchor="middle" dominant-baseline="central">oxygen (O₂)</text>
+<text x="941.1190973031594" y="277.4622361638519" font-size="22.5px" font-family="Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua, Georgia, serif" stroke="white" stroke-width="5" paint-order="stroke" text-anchor="middle" dominant-baseline="central">carbon dioxide (CO₂)</text>
+<text x="1054.9495708913607" y="420.72439412406095" font-size="22.5px" font-family="Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua, Georgia, serif" stroke="white" stroke-width="5" paint-order="stroke" text-anchor="middle" dominant-baseline="central">water (H₂O)</text>
+<text x="811.93133180548" y="414.81336971208725" font-size="22.5px" font-family="Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua, Georgia, serif" stroke="white" stroke-width="5" paint-order="stroke" text-anchor="middle" dominant-baseline="central">water (H₂O)</text>
+</g>
+<text x="624.0" y="58.5" font-size="50px" font-family="Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua, Georgia, serif" font-variant="small-caps" text-anchor="middle" dominant-baseline="central">Methane Combustion Reaction</text>
+<path d="M556.0,351.0 L682.0,351.0" stroke="black" stroke-width="5" />
+<path d="M692.0,351.0 L672.0,341.0 L677.0,351.0 L672.0,361.0 Z" stroke="black" />
+</svg>

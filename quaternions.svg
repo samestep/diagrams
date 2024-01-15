@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="220" height="220" viewBox="0 0 220 220">
+<defs>
+</defs>
+<text x="11.25" y="33.75" font-size="8px" font-family="serif" fill="#666666" text-anchor="middle" dominant-baseline="central">1</text>
+<text x="33.75" y="11.25" font-size="8px" font-family="serif" fill="#666666" text-anchor="middle" dominant-baseline="central">1</text>
+<text x="11.25" y="56.25" font-size="8px" font-family="serif" font-style="italic" fill="#666666" text-anchor="middle" dominant-baseline="central">i</text>
+<text x="56.25" y="11.25" font-size="8px" font-family="serif" font-style="italic" fill="#666666" text-anchor="middle" dominant-baseline="central">i</text>
+<text x="11.25" y="78.75" font-size="8px" font-family="serif" font-style="italic" fill="#666666" text-anchor="middle" dominant-baseline="central">j</text>
+<text x="78.75" y="11.25" font-size="8px" font-family="serif" font-style="italic" fill="#666666" text-anchor="middle" dominant-baseline="central">j</text>
+<text x="11.25" y="101.25" font-size="8px" font-family="serif" font-style="italic" fill="#666666" text-anchor="middle" dominant-baseline="central">k</text>
+<text x="101.25" y="11.25" font-size="8px" font-family="serif" font-style="italic" fill="#666666" text-anchor="middle" dominant-baseline="central">k</text>
+<text x="11.25" y="123.75" font-size="8px" font-family="serif" fill="#666666" text-anchor="middle" dominant-baseline="central">−1</text>
+<text x="123.75" y="11.25" font-size="8px" font-family="serif" fill="#666666" text-anchor="middle" dominant-baseline="central">−1</text>
+<text x="11.25" y="146.25" font-size="8px" font-family="serif" font-style="italic" fill="#666666" text-anchor="middle" dominant-baseline="central">−i</text>
+<text x="146.25" y="11.25" font-size="8px" font-family="serif" font-style="italic" fill="#666666" text-anchor="middle" dominant-baseline="central">−i</text>
+<text x="11.25" y="168.75" font-size="8px" font-family="serif" font-style="italic" fill="#666666" text-anchor="middle" dominant-baseline="central">−j</text>
+<text x="168.75" y="11.25" font-size="8px" font-family="serif" font-style="italic" fill="#666666" text-anchor="middle" dominant-baseline="central">−j</text>
+<text x="11.25" y="191.25" font-size="8px" font-family="serif" font-style="italic" fill="#666666" text-anchor="middle" dominant-baseline="central">−k</text>
+<text x="191.25" y="11.25" font-size="8px" font-family="serif" font-style="italic" fill="#666666" text-anchor="middle" dominant-baseline="central">−k</text>
+<rect x="23.5" y="23.5" width="20.5" height="20.5" rx="2" fill="#ffe466" fill-opacity="0.75" />
+<text x="33.75" y="33.75" font-size="8px" font-family="serif" fill="#bfab4c" text-anchor="middle" dominant-baseline="central">1</text>
+<rect x="23.5" y="46.0" width="20.5" height="20.5" rx="2" fill="#ffc719" fill-opacity="0.75" />
+<text x="33.75" y="56.25" font-size="8px" font-family="serif" font-style="italic" fill="#bf9513" text-anchor="middle" dominant-baseline="central">i</text>
+<rect x="23.5" y="68.5" width="20.5" height="20.5" rx="2" fill="#ffa500" fill-opacity="0.75" />
+<text x="33.75" y="78.75" font-size="8px" font-family="serif" font-style="italic" fill="#bf7b00" text-anchor="middle" dominant-baseline="central">j</text>
+<rect x="23.5" y="91.0" width="20.5" height="20.5" rx="2" fill="#ff7f00" fill-opacity="0.75" />
+<text x="33.75" y="101.25" font-size="8px" font-family="serif" font-style="italic" fill="#bf5f00" text-anchor="middle" dominant-baseline="central">k</text>
+<rect x="23.5" y="113.5" width="20.5" height="20.5" rx="2" fill="#ff5900" fill-opacity="0.75" />
+<text x="33.75" y="123.75" font-size="8px" font-family="serif" fill="#bf4300" text-anchor="middle" dominant-baseline="central">−1</text>
+<rect x="23.5" y="136.0" width="20.5" height="20.5" rx="2" fill="#fc3700" fill-opacity="0.75" />
+<text x="33.75" y="146.25" font-size="8px" font-family="serif" font-style="italic" fill="#bd2900" text-anchor="middle" dominant-baseline="central">−i</text>
+<rect x="23.5" y="158.5" width="20.5" height="20.5" rx="2" fill="#d61a00" fill-opacity="0.75" />
+<text x="33.75" y="168.75" font-size="8px" font-family="serif" font-style="italic" fill="#a01300" text-anchor="middle" dominant-baseline="central">−j</text>
+<rect x="23.5" y="181.0" width="20.5" height="20.5" rx="2" fill="#820700" fill-opacity="0.75" />
+<text x="33.75" y="191.25" font-size="8px" font-family="serif" font-style="italic" fill="#610500" text-anchor="middle" dominant-baseline="central">−k</text>
+<rect x="46.0" y="23.5" width="20.5" height="20.5" rx="2" fill="#ffc719" fill-opacity="0.75" />
+<text x="56.25" y="33.75" font-size="8px" font-family="serif" font-style="italic" fill="#bf9513" text-anchor="middle" dominant-baseline="central">i</text>
+<rect x="46.0" y="46.0" width="20.5" height="20.5" rx="2" fill="#ff5900" fill-opacity="0.75" />
+<text x="56.25" y="56.25" font-size="8px" font-family="serif" fill="#bf4300" text-anchor="middle" dominant-baseline="central">−1</text>
+<rect x="46.0" y="68.5" width="20.5" height="20.5" rx="2" fill="#ff7f00" fill-opacity="0.75" />
+<text x="56.25" y="78.75" font-size="8px" font-family="serif" font-style="italic" fill="#bf5f00" text-anchor="middle" dominant-baseline="central">k</text>
+<rect x="46.0" y="91.0" width="20.5" height="20.5" rx="2" fill="#d61a00" fill-opacity="0.75" />
+<text x="56.25" y="101.25" font-size="8px" font-family="serif" font-style="italic" fill="#a01300" text-anchor="middle" dominant-baseline="central">−j</text>
+<rect x="46.0" y="113.5" width="20.5" height="20.5" rx="2" fill="#fc3700" fill-opacity="0.75" />
+<text x="56.25" y="123.75" font-size="8px" font-family="serif" font-style="italic" fill="#bd2900" text-anchor="middle" dominant-baseline="central">−i</text>
+<rect x="46.0" y="136.0" width="20.5" height="20.5" rx="2" fill="#ffe466" fill-opacity="0.75" />
+<text x="56.25" y="146.25" font-size="8px" font-family="serif" fill="#bfab4c" text-anchor="middle" dominant-baseline="central">1</text>
+<rect x="46.0" y="158.5" width="20.5" height="20.5" rx="2" fill="#820700" fill-opacity="0.75" />
+<text x="56.25" y="168.75" font-size="8px" font-family="serif" font-style="italic" fill="#610500" text-anchor="middle" dominant-baseline="central">−k</text>
+<rect x="46.0" y="181.0" width="20.5" height="20.5" rx="2" fill="#ffa500" fill-opacity="0.75" />
+<text x="56.25" y="191.25" font-size="8px" font-family="serif" font-style="italic" fill="#bf7b00" text-anchor="middle" dominant-baseline="central">j</text>
+<rect x="68.5" y="23.5" width="20.5" height="20.5" rx="2" fill="#ffa500" fill-opacity="0.75" />
+<text x="78.75" y="33.75" font-size="8px" font-family="serif" font-style="italic" fill="#bf7b00" text-anchor="middle" dominant-baseline="central">j</text>
+<rect x="68.5" y="46.0" width="20.5" height="20.5" rx="2" fill="#820700" fill-opacity="0.75" />
+<text x="78.75" y="56.25" font-size="8px" font-family="serif" font-style="italic" fill="#610500" text-anchor="middle" dominant-baseline="central">−k</text>
+<rect x="68.5" y="68.5" width="20.5" height="20.5" rx="2" fill="#ff5900" fill-opacity="0.75" />
+<text x="78.75" y="78.75" font-size="8px" font-family="serif" fill="#bf4300" text-anchor="middle" dominant-baseline="central">−1</text>
+<rect x="68.5" y="91.0" width="20.5" height="20.5" rx="2" fill="#ffc719" fill-opacity="0.75" />
+<text x="78.75" y="101.25" font-size="8px" font-family="serif" font-style="italic" fill="#bf9513" text-anchor="middle" dominant-baseline="central">i</text>
+<rect x="68.5" y="113.5" width="20.5" height="20.5" rx="2" fill="#d61a00" fill-opacity="0.75" />
+<text x="78.75" y="123.75" font-size="8px" font-family="serif" font-style="italic" fill="#a01300" text-anchor="middle" dominant-baseline="central">−j</text>
+<rect x="68.5" y="136.0" width="20.5" height="20.5" rx="2" fill="#ff7f00" fill-opacity="0.75" />
+<text x="78.75" y="146.25" font-size="8px" font-family="serif" font-style="italic" fill="#bf5f00" text-anchor="middle" dominant-baseline="central">k</text>
+<rect x="68.5" y="158.5" width="20.5" height="20.5" rx="2" fill="#ffe466" fill-opacity="0.75" />
+<text x="78.75" y="168.75" font-size="8px" font-family="serif" fill="#bfab4c" text-anchor="middle" dominant-baseline="central">1</text>
+<rect x="68.5" y="181.0" width="20.5" height="20.5" rx="2" fill="#fc3700" fill-opacity="0.75" />
+<text x="78.75" y="191.25" font-size="8px" font-family="serif" font-style="italic" fill="#bd2900" text-anchor="middle" dominant-baseline="central">−i</text>
+<rect x="91.0" y="23.5" width="20.5" height="20.5" rx="2" fill="#ff7f00" fill-opacity="0.75" />
+<text x="101.25" y="33.75" font-size="8px" font-family="serif" font-style="italic" fill="#bf5f00" text-anchor="middle" dominant-baseline="central">k</text>
+<rect x="91.0" y="46.0" width="20.5" height="20.5" rx="2" fill="#ffa500" fill-opacity="0.75" />
+<text x="101.25" y="56.25" font-size="8px" font-family="serif" font-style="italic" fill="#bf7b00" text-anchor="middle" dominant-baseline="central">j</text>
+<rect x="91.0" y="68.5" width="20.5" height="20.5" rx="2" fill="#fc3700" fill-opacity="0.75" />
+<text x="101.25" y="78.75" font-size="8px" font-family="serif" font-style="italic" fill="#bd2900" text-anchor="middle" dominant-baseline="central">−i</text>
+<rect x="91.0" y="91.0" width="20.5" height="20.5" rx="2" fill="#ff5900" fill-opacity="0.75" />
+<text x="101.25" y="101.25" font-size="8px" font-family="serif" fill="#bf4300" text-anchor="middle" dominant-baseline="central">−1</text>
+<rect x="91.0" y="113.5" width="20.5" height="20.5" rx="2" fill="#820700" fill-opacity="0.75" />
+<text x="101.25" y="123.75" font-size="8px" font-family="serif" font-style="italic" fill="#610500" text-anchor="middle" dominant-baseline="central">−k</text>
+<rect x="91.0" y="136.0" width="20.5" height="20.5" rx="2" fill="#d61a00" fill-opacity="0.75" />
+<text x="101.25" y="146.25" font-size="8px" font-family="serif" font-style="italic" fill="#a01300" text-anchor="middle" dominant-baseline="central">−j</text>
+<rect x="91.0" y="158.5" width="20.5" height="20.5" rx="2" fill="#ffc719" fill-opacity="0.75" />
+<text x="101.25" y="168.75" font-size="8px" font-family="serif" font-style="italic" fill="#bf9513" text-anchor="middle" dominant-baseline="central">i</text>
+<rect x="91.0" y="181.0" width="20.5" height="20.5" rx="2" fill="#ffe466" fill-opacity="0.75" />
+<text x="101.25" y="191.25" font-size="8px" font-family="serif" fill="#bfab4c" text-anchor="middle" dominant-baseline="central">1</text>
+<rect x="113.5" y="23.5" width="20.5" height="20.5" rx="2" fill="#ff5900" fill-opacity="0.75" />
+<text x="123.75" y="33.75" font-size="8px" font-family="serif" fill="#bf4300" text-anchor="middle" dominant-baseline="central">−1</text>
+<rect x="113.5" y="46.0" width="20.5" height="20.5" rx="2" fill="#fc3700" fill-opacity="0.75" />
+<text x="123.75" y="56.25" font-size="8px" font-family="serif" font-style="italic" fill="#bd2900" text-anchor="middle" dominant-baseline="central">−i</text>
+<rect x="113.5" y="68.5" width="20.5" height="20.5" rx="2" fill="#d61a00" fill-opacity="0.75" />
+<text x="123.75" y="78.75" font-size="8px" font-family="serif" font-style="italic" fill="#a01300" text-anchor="middle" dominant-baseline="central">−j</text>
+<rect x="113.5" y="91.0" width="20.5" height="20.5" rx="2" fill="#820700" fill-opacity="0.75" />
+<text x="123.75" y="101.25" font-size="8px" font-family="serif" font-style="italic" fill="#610500" text-anchor="middle" dominant-baseline="central">−k</text>
+<rect x="113.5" y="113.5" width="20.5" height="20.5" rx="2" fill="#ffe466" fill-opacity="0.75" />
+<text x="123.75" y="123.75" font-size="8px" font-family="serif" fill="#bfab4c" text-anchor="middle" dominant-baseline="central">1</text>
+<rect x="113.5" y="136.0" width="20.5" height="20.5" rx="2" fill="#ffc719" fill-opacity="0.75" />
+<text x="123.75" y="146.25" font-size="8px" font-family="serif" font-style="italic" fill="#bf9513" text-anchor="middle" dominant-baseline="central">i</text>
+<rect x="113.5" y="158.5" width="20.5" height="20.5" rx="2" fill="#ffa500" fill-opacity="0.75" />
+<text x="123.75" y="168.75" font-size="8px" font-family="serif" font-style="italic" fill="#bf7b00" text-anchor="middle" dominant-baseline="central">j</text>
+<rect x="113.5" y="181.0" width="20.5" height="20.5" rx="2" fill="#ff7f00" fill-opacity="0.75" />
+<text x="123.75" y="191.25" font-size="8px" font-family="serif" font-style="italic" fill="#bf5f00" text-anchor="middle" dominant-baseline="central">k</text>
+<rect x="136.0" y="23.5" width="20.5" height="20.5" rx="2" fill="#fc3700" fill-opacity="0.75" />
+<text x="146.25" y="33.75" font-size="8px" font-family="serif" font-style="italic" fill="#bd2900" text-anchor="middle" dominant-baseline="central">−i</text>
+<rect x="136.0" y="46.0" width="20.5" height="20.5" rx="2" fill="#ffe466" fill-opacity="0.75" />
+<text x="146.25" y="56.25" font-size="8px" font-family="serif" fill="#bfab4c" text-anchor="middle" dominant-baseline="central">1</text>
+<rect x="136.0" y="68.5" width="20.5" height="20.5" rx="2" fill="#820700" fill-opacity="0.75" />
+<text x="146.25" y="78.75" font-size="8px" font-family="serif" font-style="italic" fill="#610500" text-anchor="middle" dominant-baseline="central">−k</text>
+<rect x="136.0" y="91.0" width="20.5" height="20.5" rx="2" fill="#ffa500" fill-opacity="0.75" />
+<text x="146.25" y="101.25" font-size="8px" font-family="serif" font-style="italic" fill="#bf7b00" text-anchor="middle" dominant-baseline="central">j</text>
+<rect x="136.0" y="113.5" width="20.5" height="20.5" rx="2" fill="#ffc719" fill-opacity="0.75" />
+<text x="146.25" y="123.75" font-size="8px" font-family="serif" font-style="italic" fill="#bf9513" text-anchor="middle" dominant-baseline="central">i</text>
+<rect x="136.0" y="136.0" width="20.5" height="20.5" rx="2" fill="#ff5900" fill-opacity="0.75" />
+<text x="146.25" y="146.25" font-size="8px" font-family="serif" fill="#bf4300" text-anchor="middle" dominant-baseline="central">−1</text>
+<rect x="136.0" y="158.5" width="20.5" height="20.5" rx="2" fill="#ff7f00" fill-opacity="0.75" />
+<text x="146.25" y="168.75" font-size="8px" font-family="serif" font-style="italic" fill="#bf5f00" text-anchor="middle" dominant-baseline="central">k</text>
+<rect x="136.0" y="181.0" width="20.5" height="20.5" rx="2" fill="#d61a00" fill-opacity="0.75" />
+<text x="146.25" y="191.25" font-size="8px" font-family="serif" font-style="italic" fill="#a01300" text-anchor="middle" dominant-baseline="central">−j</text>
+<rect x="158.5" y="23.5" width="20.5" height="20.5" rx="2" fill="#d61a00" fill-opacity="0.75" />
+<text x="168.75" y="33.75" font-size="8px" font-family="serif" font-style="italic" fill="#a01300" text-anchor="middle" dominant-baseline="central">−j</text>
+<rect x="158.5" y="46.0" width="20.5" height="20.5" rx="2" fill="#ff7f00" fill-opacity="0.75" />
+<text x="168.75" y="56.25" font-size="8px" font-family="serif" font-style="italic" fill="#bf5f00" text-anchor="middle" dominant-baseline="central">k</text>
+<rect x="158.5" y="68.5" width="20.5" height="20.5" rx="2" fill="#ffe466" fill-opacity="0.75" />
+<text x="168.75" y="78.75" font-size="8px" font-family="serif" fill="#bfab4c" text-anchor="middle" dominant-baseline="central">1</text>
+<rect x="158.5" y="91.0" width="20.5" height="20.5" rx="2" fill="#fc3700" fill-opacity="0.75" />
+<text x="168.75" y="101.25" font-size="8px" font-family="serif" font-style="italic" fill="#bd2900" text-anchor="middle" dominant-baseline="central">−i</text>
+<rect x="158.5" y="113.5" width="20.5" height="20.5" rx="2" fill="#ffa500" fill-opacity="0.75" />
+<text x="168.75" y="123.75" font-size="8px" font-family="serif" font-style="italic" fill="#bf7b00" text-anchor="middle" dominant-baseline="central">j</text>
+<rect x="158.5" y="136.0" width="20.5" height="20.5" rx="2" fill="#820700" fill-opacity="0.75" />
+<text x="168.75" y="146.25" font-size="8px" font-family="serif" font-style="italic" fill="#610500" text-anchor="middle" dominant-baseline="central">−k</text>
+<rect x="158.5" y="158.5" width="20.5" height="20.5" rx="2" fill="#ff5900" fill-opacity="0.75" />
+<text x="168.75" y="168.75" font-size="8px" font-family="serif" fill="#bf4300" text-anchor="middle" dominant-baseline="central">−1</text>
+<rect x="158.5" y="181.0" width="20.5" height="20.5" rx="2" fill="#ffc719" fill-opacity="0.75" />
+<text x="168.75" y="191.25" font-size="8px" font-family="serif" font-style="italic" fill="#bf9513" text-anchor="middle" dominant-baseline="central">i</text>
+<rect x="181.0" y="23.5" width="20.5" height="20.5" rx="2" fill="#820700" fill-opacity="0.75" />
+<text x="191.25" y="33.75" font-size="8px" font-family="serif" font-style="italic" fill="#610500" text-anchor="middle" dominant-baseline="central">−k</text>
+<rect x="181.0" y="46.0" width="20.5" height="20.5" rx="2" fill="#d61a00" fill-opacity="0.75" />
+<text x="191.25" y="56.25" font-size="8px" font-family="serif" font-style="italic" fill="#a01300" text-anchor="middle" dominant-baseline="central">−j</text>
+<rect x="181.0" y="68.5" width="20.5" height="20.5" rx="2" fill="#ffc719" fill-opacity="0.75" />
+<text x="191.25" y="78.75" font-size="8px" font-family="serif" font-style="italic" fill="#bf9513" text-anchor="middle" dominant-baseline="central">i</text>
+<rect x="181.0" y="91.0" width="20.5" height="20.5" rx="2" fill="#ffe466" fill-opacity="0.75" />
+<text x="191.25" y="101.25" font-size="8px" font-family="serif" fill="#bfab4c" text-anchor="middle" dominant-baseline="central">1</text>
+<rect x="181.0" y="113.5" width="20.5" height="20.5" rx="2" fill="#ff7f00" fill-opacity="0.75" />
+<text x="191.25" y="123.75" font-size="8px" font-family="serif" font-style="italic" fill="#bf5f00" text-anchor="middle" dominant-baseline="central">k</text>
+<rect x="181.0" y="136.0" width="20.5" height="20.5" rx="2" fill="#ffa500" fill-opacity="0.75" />
+<text x="191.25" y="146.25" font-size="8px" font-family="serif" font-style="italic" fill="#bf7b00" text-anchor="middle" dominant-baseline="central">j</text>
+<rect x="181.0" y="158.5" width="20.5" height="20.5" rx="2" fill="#fc3700" fill-opacity="0.75" />
+<text x="191.25" y="168.75" font-size="8px" font-family="serif" font-style="italic" fill="#bd2900" text-anchor="middle" dominant-baseline="central">−i</text>
+<rect x="181.0" y="181.0" width="20.5" height="20.5" rx="2" fill="#ff5900" fill-opacity="0.75" />
+<text x="191.25" y="191.25" font-size="8px" font-family="serif" fill="#bf4300" text-anchor="middle" dominant-baseline="central">−1</text>
+</svg>
