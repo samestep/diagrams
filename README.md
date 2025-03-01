@@ -1,10 +1,9 @@
 # Diagrams
 
-First install [PDM][], then run these commands:
+First install [uv][], then run this command:
 
 ```sh
-pdm install
-pdm run all.py
+uv run all.py
 ```
 
-[PDM]: https://pdm.fming.dev/
+[uv]: https://docs.astral.sh/uv/

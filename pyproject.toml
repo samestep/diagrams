@@ -1,9 +1,6 @@
 [project]
 name = "diagrams"
 version = "0.0.0"
+classifiers = ["Private :: Do Not Upload"]
 requires-python = ">=3.10,<3.11"
 dependencies = ["drawsvg", "networkx", "numpy", "sympy", "watchfiles"]
-
-[build-system]
-requires = ["pdm-backend"]
-build-backend = "pdm.backend"

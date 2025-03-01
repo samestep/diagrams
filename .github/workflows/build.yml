@@ -9,19 +9,18 @@ jobs:
   build:
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: actions/setup-python@v4
         with:
           python-version: "3.10"
-      - uses: pdm-project/setup-pdm@v3
-      - run: pdm install
-      - run: pdm run all.py
-      - uses: actions/upload-artifact@v3
+      - uses: astral-sh/setup-uv@v5
+      - run: uv run all.py
+      - uses: actions/upload-artifact@v4
         with:
           name: diagrams
           path: out
       - if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./out
